@@ -20,7 +20,7 @@ const SegmentPage = ({ params, searchParams }) => {
         <div className="text-center">
             this is block segment page {year || new Date().getFullYear()} for {id}
             <br /><p className="text-xl font-bold">{searchParams.title}</p>
-            <button onClick={() => router.back()}>
+            <button className="font-bold text-green-500 border-2 p-2 border-green-500" onClick={() => router.back()}>
                 Back
             </button>
         </div>
